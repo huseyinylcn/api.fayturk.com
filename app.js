@@ -68,7 +68,7 @@ const config = {
     console.log("sql server connect error")
   })
   
- let port = 3002
+ let port = 3002 || process.env.PORT
   
   app.listen( port, (err) => {
     if (err) console.log("server pasif");
